@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+	<title>계산기</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<table cellspacing=7>
+		<colgroup>
+			<col span="1" width="25%">
+			<col span="1" width="25%">
+			<col span="1" width="25%">
+			<col span="1" width="25%">
+		</colgroup>
+		<tbody>
+			<tr>
+				<td colspan="4">
+					<input type="hidden" value=''>
+					<div class="sm_char">
+						<span class="result"></span>
+						<span class="pre_result"></span>
+					</div>
+					<div class="big_char">
+						<span class="input_val">0</span>
+						<span class="result_val"></span>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="gray" onclick ="calculator()" value = "(">(</td>
+				<td class="gray" value = ")">)</td>
+				<td class="gray" value = "%">%</td>
+				<td class="gray" value = "AC">AC</td>
+			</tr>
+			<tr>
+				<td class="light_gray" value = "7">7</td>
+				<td class="light_gray" value = "8">8</td>
+				<td class="light_gray" value = "9">9</td>
+				<td class="gray" value = "/">÷</td>
+			</tr>
+			<tr>
+				<td class="light_gray" value = "4">4</td>
+				<td class="light_gray" value = "5">5</td>
+				<td class="light_gray" value = "6">6</td>
+				<td class="gray" value = "*">×</td>
+			</tr>
+			<tr>
+				<td class="light_gray" value = "1">1</td>
+				<td class="light_gray" value = "2">2</td>
+				<td class="light_gray" value = "3">3</td>
+				<td class="gray" value = "-">-</td>
+			</tr>	
+			<tr>
+				<td class="light_gray" value = "0">0</td>
+				<td class="light_gray" value = ".">.</td>
+				<td class="blue" value = "result">=</td>
+				<td class="gray" value = "+">+</td>
+			</tr>
+		</tbody>
+	</table>
+	<script  type="text/javascript" src="/js/calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+.light_gray {
+	background: #f1f3f4;
+}
+.gray {
+	background: #dfe1e5;
+}
+.blue {
+	background: #4285f4;
+	color: #fff;
+}
+table {
+	border: 1px solid #eee;
+	text-align: center;
+	width: 230px;
+}
+table td {
+	border: 1px solid #eee;
+	line-height: 34px;
+	border-radius: 4px;
+	border-spacing: 8px;
+	cursor: pointer;
+}
