@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
 	<title>계산기</title>
 	<link rel="stylesheet" href="/css/style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/calculator.js"></script>
 </head>
 <body>
 	<table cellspacing=7>
@@ -17,49 +19,44 @@
 		<tbody>
 			<tr>
 				<td colspan="4">
-					<input type="hidden" value=''>
-					<div class="sm_char">
-						<span class="result"></span>
-						<span class="pre_result"></span>
-					</div>
-					<div class="big_char">
-						<span class="input_val">0</span>
-						<span class="result_val"></span>
+					<input type="hidden" value='0' name="prvNum">
+					<div class="result_win">
+						<span class="input_val"></span>
+						<span class="result_val">0</span>
 					</div>
 				</td>
 			</tr>
 			<tr>
-				<td class="gray" onclick ="calculator()" value = "(">(</td>
-				<td class="gray" value = ")">)</td>
-				<td class="gray" value = "%">%</td>
-				<td class="gray" value = "AC">AC</td>
+				<td class="btn_operation gray">(</td>
+				<td class="btn_operation gray">)</td>
+				<td class="btn_operation gray">%</td>
+				<td class="btn_reset gray">AC</td>
 			</tr>
 			<tr>
-				<td class="light_gray" value = "7">7</td>
-				<td class="light_gray" value = "8">8</td>
-				<td class="light_gray" value = "9">9</td>
-				<td class="gray" value = "/">÷</td>
+				<td class="btn_num light_gray">7</td>
+				<td class="btn_num light_gray">8</td>
+				<td class="btn_num light_gray">9</td>
+				<td class="btn_operation  gray">÷</td>
 			</tr>
 			<tr>
-				<td class="light_gray" value = "4">4</td>
-				<td class="light_gray" value = "5">5</td>
-				<td class="light_gray" value = "6">6</td>
-				<td class="gray" value = "*">×</td>
+				<td class="btn_num light_gray">4</td>
+				<td class="btn_num light_gray">5</td>
+				<td class="btn_num light_gray">6</td>
+				<td class="btn_operation  gray">×</td>
 			</tr>
 			<tr>
-				<td class="light_gray" value = "1">1</td>
-				<td class="light_gray" value = "2">2</td>
-				<td class="light_gray" value = "3">3</td>
-				<td class="gray" value = "-">-</td>
-			</tr>	
+				<td class="btn_num light_gray">1</td>
+				<td class="btn_num light_gray">2</td>
+				<td class="btn_num light_gray">3</td>
+				<td class="btn_operation gray">-</td>
+			</tr>
 			<tr>
-				<td class="light_gray" value = "0">0</td>
-				<td class="light_gray" value = ".">.</td>
-				<td class="blue" value = "result">=</td>
-				<td class="gray" value = "+">+</td>
+				<td class="btn_num light_gray">0</td>
+				<td class="btn_num light_gray">.</td>
+				<td class="btn_result blue">=</td>
+				<td class="btn_operation gray">+</td>
 			</tr>
 		</tbody>
 	</table>
-	<script  type="text/javascript" src="/js/calculator.js"></script>
 </body>
 </html>
